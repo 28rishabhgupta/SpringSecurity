@@ -1,0 +1,21 @@
+package com.SpringSecurity.Controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class MyController {
+		
+	@GetMapping("/hello-world")
+	public String hello() {
+		return "hello-world";
+	}
+	
+	@ResponseBody
+	@GetMapping("/hi")
+	public String hi() {
+		return "hi-there welcome to security";
+	}
+
+}

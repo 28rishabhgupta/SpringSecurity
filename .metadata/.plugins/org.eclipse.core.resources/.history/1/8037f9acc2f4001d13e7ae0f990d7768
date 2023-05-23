@@ -1,0 +1,23 @@
+package com.serializable;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+public class SerializableDemo {
+
+	public static void main(String[] args) {
+		
+		Dog d1 = new Dog();
+		FileOutputStream fos = new FileOutputStream("abc.txt");
+		ObjectOutputStream objectOutputStream = new ObjectOutputStream(fos);
+		objectOutputStream.writeObject(objectOutputStream);
+
+	}
+
+}
+
+class Dog implements Serializable{
+	int i = 10;
+	int j = 20;
+}

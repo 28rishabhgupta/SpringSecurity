@@ -1,0 +1,5 @@
+package com.SpringSecurity.Controller;
+
+public class MyController {
+
+}

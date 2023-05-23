@@ -1,0 +1,18 @@
+package com.serializable;
+
+import java.io.Serializable;
+
+public class SerializableDemo {
+
+	public static void main(String[] args) {
+		
+		Dog d1 = new Dog();
+
+	}
+
+}
+
+class Dog implements Serializable{
+	int i = 10;
+	int j = 20;
+}
